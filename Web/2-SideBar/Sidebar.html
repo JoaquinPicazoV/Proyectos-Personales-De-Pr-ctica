@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/98fb854785.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../2-sideBar/sidebar.css">
+    <title>sidebar</title>
+
+</head>
+
+<body>
+    <!-- JS externo con la lógica del programa -->
+    <script src="../2-sideBar/sidebar.js"></script>
+
+    <!-- sidebar -->
+    <div class="sidebar">
+
+        <!-- Columna que siempre está a la vista. Contiene los íconos -->
+        <div class="default">
+            <!-- Contiene el ícono para abrir el sidebar -->
+            <div class="sup">
+                <button class="options" onclick="interactuar()"><i class="fa-solid fa-bars"></i></button>
+            </div>
+            <!-- Contiene los íconos de las redes sociales. Se les puede añadir la ubicación de las páginas reales -->
+            <div class="column">
+                <ul>
+                    <li><a href=""><i id="ig" class="fa-brands fa-instagram"></i></a></li>
+                    <li><a href=""><i id="face" class="fa-brands fa-facebook-f"></i></a></li>
+                    <li><a href=""><i id="wtsp" class="fa-brands fa-whatsapp"></i></a></li>
+                    <li><a href=""><i id="git" class="fa-brands fa-github"></i></a></li>
+                    <li><a href=""><i id="tele" class="fa-brands fa-telegram"></i></a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Contiene la columna con los nombres de las redes sociales, se muestra al abrir el sidebar -->
+        <div class="window">
+            <!-- Lo usé para hacer un espacio de separación y mantener a la misma altura los íconos y las letras-->
+            <div class="box">
+
+            </div>
+            <!-- Contiene el nombre de las redes sociales. Se les puede añadir la ubicación de las páginas reales -->
+            <div class="text">
+                <ul>
+                    <li><a class="links" id="ig" href="">Instagram</a></li>
+                    <li><a class="links" id="face" href="">Facebook</a></li>
+                    <li><a class="links" id="wtsp" href="">Whatsapp</a></li>
+                    <li><a class="links" id="git" href="">Github</a></li>
+                    <li><a class="links" id="tele" href="">Telegram</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

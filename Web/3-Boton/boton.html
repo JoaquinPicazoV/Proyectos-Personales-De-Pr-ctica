@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../3-Boton/boton.css">
+    <script src="https://kit.fontawesome.com/98fb854785.js" crossorigin="anonymous"></script>
+    <title>Botón</title>
+</head>
+
+<body>
+    <!-- JS externo con la lógica del programa -->
+    <script src="../3-Boton/boton.js"></script>
+
+    <!-- Contiene el contenido de la aplicación web -->
+    <div class="container">
+        <!-- Mensaje que se muestra/oculta-->
+        <div class="message">
+            <div class="title">
+                <h1>MENSAJE</h1>
+            </div>
+            <br>
+            <p>Este es un mensaje que se habilita al hacer click en el boton de color verde. Para cerrarlo se debe hacer
+                click en el boton rojo que se genera al estar abierto.</p>
+            <p>Esta página no es responsive, está hecha para principalmente para pantallas de computador.</p>
+            <p>Si se desea agregar o quitar texto de este mensaje, también hay que modificar la cantidad de pixeles que
+                se moverá el botón, ya que este hay que ajustarlo manualmente respecto a los cambios del mensaje. Esto
+                se puede hacer en el archivo "boton.css"</p>
+        </div>
+        <!-- Botón para mostrar/ocultar el mensaje de la aplicación web -->
+        <button id="btn" onclick="clicks()">
+            <i class="fa-solid fa-plus"></i>
+        </button>
+    </div>
+</body>
+
+</html>
