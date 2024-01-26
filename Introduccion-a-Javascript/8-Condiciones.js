@@ -155,3 +155,34 @@ let edadPatricio = 72;
 esMayorDeEdad = (edadPatricio>=18) ? 'Es mayor de edad' : 'Es menor de edad';
 console.log(esMayorDeEdad);
 /* Como respuesta, sabemos que es mayor de edad. Ahora Don Patricio podrá desayunar. */
+
+
+/*
+####################################################### OPERADORES && y || #############################################################
+El operador lógico AND (&&) devuelve true si ambas condiciones son verdaderas, de lo contrario, devuelve false. Es decir, que el código
+que se encuentra dentro del IF solo se ejecutará si ambas condiciones son verdaderas. Ejemplo:
+
+let usuarioRegistrado = true;
+let contrasenaCorrecta = true;
+
+if (usuarioRegistrado && contrasenaCorrecta) {
+  console.log("Acceso permitido a la aplicación.");
+} else {
+  console.log("Acceso denegado.");
+}
+
+
+
+El operador lógico OR (||) devuelve true si al menos una de las condiciones es verdadera. Es decir, que si el código que se encuentra
+dentro del IF se ejecutará si al menos una de las condiciones es verdadera. Ejemplo:
+
+let esEstudiante = false;
+let esEmpleado = true;
+
+if (esEstudiante || esEmpleado) {
+  console.log("La persona es estudiante o empleado.");
+} else {
+  console.log("La persona no es ni estudiante ni empleado.");
+}
+
+*/
