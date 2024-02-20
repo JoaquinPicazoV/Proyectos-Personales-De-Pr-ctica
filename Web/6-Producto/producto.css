@@ -1,0 +1,202 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: linear-gradient(to right, #191cce, #23b4e0);
+}
+
+main {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.title {
+    font-size: 30px;
+}
+
+.info {
+    font-size: 10px;
+}
+
+.producto {
+    position: fixed;
+    width: 300px;
+    height: 300px;
+    border-radius: 20px;
+    z-index: 0;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(255, 255, 255, 0.3);
+}
+
+
+.main-img {
+    width: 200px;
+}
+
+.subproductos {
+    position: relative;
+    z-index: 1;
+    display: grid;
+    gap: 40px;
+    left: -170px
+}
+
+button {
+    width: 150px;
+    height: 50px;
+    padding: 10px;
+    font-size: 20px;
+    border-radius: 20px;
+    border: none;
+    color: rgb(0, 0, 0);
+    background-color: white;
+    box-shadow: 6px 6px 2px rgba(0, 0, 0, 0.9);
+    cursor: pointer;
+}
+
+
+.agregar {
+    position: absolute;
+    z-index: 2;
+    transform: translateY(150px);
+}
+
+/* EFECTOS DE ROTACIÓN EN SUBPRODUCTOS */
+.p1,
+.p2,
+.p3 {
+    width: 70px;
+    background-color: rgb(255, 255, 255, 0.3);
+    padding: 20px;
+    border-radius: 20px;
+    transition: transform 0.7s ease;
+    cursor: pointer;
+}
+
+.p1:hover {
+    transform: rotate(-45deg);
+}
+
+.p2:hover {
+    transform: rotate(-45deg);
+}
+
+.p3:hover {
+    transform: rotate(-45deg);
+}
+
+
+/* Pantallas para celular (se hacen más pequeños los elementos) */
+@media only screen and (max-width: 800px) {
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        background-image: linear-gradient(to right, #191cce, #23b4e0);
+    }
+
+    main {
+        height: 100vh;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .title {
+        font-size: 30px;
+    }
+
+    .info {
+        font-size: 10px;
+    }
+
+    .producto {
+        position: fixed;
+        width: 200px;
+        height: 200px;
+        border-radius: 20px;
+        z-index: 0;
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: rgb(255, 255, 255, 0.3);
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    .main-img {
+        width: 100px;
+        align-self: center;
+    }
+
+    .subproductos {
+        position: relative;
+        z-index: 1;
+        display: grid;
+        gap: 40px;
+        left: -110px
+    }
+
+    button {
+        width: 100px;
+        height: 30px;
+        padding: 10px;
+        font-size: 10px;
+        border-radius: 20px;
+        border: none;
+        color: rgb(0, 0, 0);
+        background-color: white;
+        box-shadow: 6px 6px 2px rgba(0, 0, 0, 0.9);
+        cursor: pointer;
+    }
+
+
+    .agregar {
+        position: absolute;
+        z-index: 2;
+        transform: translateY(100px);
+    }
+
+    /* EFECTOS DE ROTACIÓN EN SUBPRODUCTOS */
+    .p1,
+    .p2,
+    .p3 {
+        width: 30px;
+        background-color: rgb(255, 255, 255, 0.3);
+        padding: 20px;
+        border-radius: 20px;
+        transition: transform 0.7s ease;
+        cursor: pointer;
+    }
+
+    .p1:hover {
+        transform: rotate(-45deg);
+    }
+
+    .p2:hover {
+        transform: rotate(-45deg);
+    }
+
+    .p3:hover {
+        transform: rotate(-45deg);
+    }
+}

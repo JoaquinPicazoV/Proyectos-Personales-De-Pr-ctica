@@ -1,0 +1,45 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: black;
+}
+
+.circulo {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-color: #3498db;
+    border-radius: 50%;
+    margin: auto;
+    animation: onda 1.5s ease-out infinite;
+    box-shadow: 0 0 10px #77a8e7, 0 0 20px #77a8e7, 0 0 30px #77a8e7, 0 0 40px #77a8e7, 0 0 50px #77a8e7, 0 0 60px #77a8e7, 0 0 70px #77a8e7;
+}
+
+p {
+    position: relative;
+    z-index: 2;
+    color: white;
+    transform: translateY(100px); 
+}
+
+
+/* Genera la onda expansiva animada del círculo */
+@keyframes onda {
+    0% {
+        transform: scale(0);
+        opacity: 0.8;
+    }
+  
+    100% {
+        transform: scale(2);
+        opacity: 0;
+    }
+}
