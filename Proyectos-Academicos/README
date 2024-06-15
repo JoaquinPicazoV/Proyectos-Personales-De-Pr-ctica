@@ -1,0 +1,3 @@
+Es probable que se deban instalar cosas y modificar las rutas. Solo adjunto el código y archivos importantes que corresponden a los proyectos. 
+Además de modificar las credenciales de acceso de la base de datos a usar.
+La web usa Postgresql de forma local. Y la app móvil usa firebase.
